@@ -156,35 +156,6 @@ public static boolean check_state(house[] h) {//true means continue, false means
 	
 	if(flag2||flag1)//if one of it is true
 	{
-		/*if(flag2) {//player2 all zero
-			int sum=h[board1].get_seeds();
-			for(int i =0;i<board1;i++) {
-				sum+=h[i].get_seeds();
-			}
-			if(h[board1].get_seeds() >h[board2].get_seeds())
-				System.out.println("You Win!!!!!\n");
-			else if(h[board1].get_seeds()==h[board2].get_seeds())
-				System.out.println("Game Over!!!!!\n");
-			else
-				System.out.println("You lost!!!\n");
-			
-			return false;
-			
-		}
-		else if(flag1) {
-			int sum=h[board2].get_seeds();
-			for(int i = (board1+1);i<board2;i++) {
-				sum+=h[i].get_seeds();
-			}
-			if(h[board1].get_seeds() >h[board2].get_seeds())
-				System.out.println("You Win!!!!!\n");
-			else if(h[board1].get_seeds()==h[board2].get_seeds())
-				System.out.println("Game Over!!!!!\n");
-			else
-				System.out.println("You lost!!!\n");
-			
-			return false;
-		}*/
 	   return false;		
 	}
 	else 

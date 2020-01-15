@@ -69,8 +69,6 @@ public ArrayList<house[]> Successors(house[] h,boolean flag) {//house[] h suppos
 		}
 		
 		MancalaBoard.update_house(temp,i,false);
-		//MancalaBoard.print_board(temp);
-		//MancalaBoard.print_board(h);
 		successors_house.add(temp);
 		
 	}
@@ -88,8 +86,6 @@ public ArrayList<house[]> Successors(house[] h,boolean flag) {//house[] h suppos
 			}
 			
 			MancalaBoard.update_house(temp,i,true);
-			//MancalaBoard.print_board(temp);
-			//MancalaBoard.print_board(h);
 			successors_house.add(temp);
 			}
 		}
@@ -159,30 +155,6 @@ public ArrayList<Integer> bestmove() {
 	return temp;
 }
 public int move() {
-	/*MancalaBoard.print_board(original);
-	int size = original.length;//size of the house[] h
-	int board1 = size/2;
-	int board2 = size-1;
-	int index = bestm_index+1;
-	if(sides) {
-		for(int i=0;i<board1-1;i++) {
-			if(original[i].get_seeds()!=0) {
-				index--;
-				if(index == 0)
-					return i;
-			}
-				
-		}
-	}
-	else {
-		for(int i=board1;i<board2;i++) {
-			if(original[i].get_seeds()!=0) {
-				index--;
-				if(index == 0)
-					return i;
-			}
-		}
-	}*/
 	int size = original.length;//size of the house[] h
 	int board1 = size/2;
 	int board2 = size-1;
@@ -249,8 +221,6 @@ public house[] update_AI() {
 				break;
 			}
 			else turn1=0;	
-			//MancalaBoard.print_board(temp);
-			//MancalaBoard.print_board(h);
 			}
 		}
     	   }
